@@ -10,9 +10,10 @@ const App = () => {
 
   function addItem(event) {
     event.preventDefault();
-    const item = event.target.elements.itemInput.value;
+    const form = event.target
+    const item = form.elements.itemInput.value;
     setShoppingList([...shoppingList, item]);
-    event.target.elements.itemInput.value = "";
+    form.reset()
   }
 
   function deleteItem(itemToDelete) {
