@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ShopPratch/static/css/main.b8d35a9b.css",
+    "main.js": "/ShopPratch/static/js/main.7dbef8f0.js",
+    "static/js/787.28cb0dcd.chunk.js": "/ShopPratch/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/ShopPratch/index.html",
+    "main.b8d35a9b.css.map": "/ShopPratch/static/css/main.b8d35a9b.css.map",
+    "main.7dbef8f0.js.map": "/ShopPratch/static/js/main.7dbef8f0.js.map",
+    "787.28cb0dcd.chunk.js.map": "/ShopPratch/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8d35a9b.css",
+    "static/js/main.7dbef8f0.js"
+  ]
+}
