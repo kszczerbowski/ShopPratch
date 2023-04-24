@@ -10,14 +10,6 @@ export const ShoppingListItem = ({ item, id, onDelete, onClick }) => {
       >
         {item}
       </span>
-      {/* <StyledDeleteButton
-        type="button"
-        onClick={() => {
-          onDelete(id);
-        }}
-      >
-        Delete
-      </StyledDeleteButton> */}
       <StyledDeleteButton
         onClick={() => {
           onDelete(id);

@@ -2,13 +2,8 @@ import styled from 'styled-components'
 
 export const StyledShoppingListItem = styled.li`
     margin: 5px;
+    font-weight: 500;
 `
-
-// export const StyledDeleteButton = styled.button`
-//     margin-left: 5px;
-// 
-//     
-// `
 
 export const StyledDeleteButton = styled.button`
   margin-left: 10px;
