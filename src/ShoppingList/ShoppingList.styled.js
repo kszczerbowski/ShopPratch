@@ -1,5 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const StyledShoppingList = styled.ul`
-    list-style: none;
-`
+  list-style-position: inside;
+  padding: 0px;
+`;

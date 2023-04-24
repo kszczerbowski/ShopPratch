@@ -1,8 +1,40 @@
-import {StyledShoppingListItem} from './ShoppingListItem.styled'
+import { StyledShoppingListItem, StyledDeleteButton, StyledSVG } from "./ShoppingListItem.styled";
 
-export const ShoppingListItem = ({item, onDelete}) => {
-    return <StyledShoppingListItem>
+export const ShoppingListItem = ({ item, id, onDelete, onClick }) => {
+  return (
+    <StyledShoppingListItem>
+      <span
+        onClick={(event) => {
+          onClick(event);
+        }}
+      >
         {item}
-        <button type='button' onClick={()=>{onDelete(item)}}>Delete</button>
+      </span>
+      {/* <StyledDeleteButton
+        type="button"
+        onClick={() => {
+          onDelete(id);
+        }}
+      >
+        Delete
+      </StyledDeleteButton> */}
+      <StyledDeleteButton
+        onClick={() => {
+          onDelete(id);
+        }}
+        type="button"
+      >
+        <span>
+          <StyledSVG
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="10"
+            viewBox="0 0 24 24"
+          >
+            <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path>
+          </StyledSVG>
+        </span>
+      </StyledDeleteButton>
     </StyledShoppingListItem>
-}
+  );
+};
